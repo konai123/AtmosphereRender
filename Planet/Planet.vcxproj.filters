@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{06dcf987-d5c3-489b-aa0a-88d547a323d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Pass">
+      <UniqueIdentifier>{88feb99e-ebf6-4410-abd9-7d71b8473181}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="planet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="AtmoSphereEffect.cpp">
+      <Filter>Source Files\Pass</Filter>
+    </ClCompile>
+    <ClCompile Include="PlanetCamera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry.cpp">
+      <Filter>Source Files\Pass</Filter>
+    </ClCompile>
+    <ClCompile Include="CloudNoise.cpp">
+      <Filter>Source Files\Pass</Filter>
+    </ClCompile>
+    <ClCompile Include="VolumeTexture3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PostProcess.cpp">
+      <Filter>Source Files\Pass</Filter>
+    </ClCompile>
+    <ClCompile Include="VolumetricCloud.cpp">
+      <Filter>Source Files\Pass</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="planet.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtmoSphereEffect.h">
+      <Filter>Source Files\Pass</Filter>
+    </ClInclude>
+    <ClInclude Include="types.h">
+      <Filter>Source Files\Pass</Filter>
+    </ClInclude>
+    <ClInclude Include="PlanetCamera.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry.h">
+      <Filter>Source Files\Pass</Filter>
+    </ClInclude>
+    <ClInclude Include="CloudNoise.h">
+      <Filter>Source Files\Pass</Filter>
+    </ClInclude>
+    <ClInclude Include="VolumeTexture3D.h" />
+    <ClInclude Include="PostProcess.h">
+      <Filter>Source Files\Pass</Filter>
+    </ClInclude>
+    <ClInclude Include="VolumetricCloud.h">
+      <Filter>Source Files\Pass</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Logo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Logo44.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="SmallLogo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="SplashScreen.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="StoreLogo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WideLogo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="common.hlsli">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="atmosphereFunctions.hlsli">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="planet.hlsli">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="noise.hlsli">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="cloudFunctions.hlsli">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="atmospherePrecomputeTranssmitance.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="atmospherePrecomputeSingleScattering.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="atmospherePrecomputeIrradiance.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="atmospherePrecomputeScatteringDensity.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="atmospherePrecomputeMultiScattering.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="fullscreenQuad.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="planet.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="atmospherePrecomputeAmbient.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="baseCloudNoise.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="detailCloudNoise.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="bufferNormalizing.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="cloudWeatherNoise.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="blur.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="volumetricCloud.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="crepuscularRays.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="cloudDebug.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>
